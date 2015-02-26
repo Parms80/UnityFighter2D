@@ -1,0 +1,1153 @@
+fileFormatVersion: 2
+guid: 442907985c1b54813bb059f654dea73f
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: axel_spritesheet_0
+    21300002: axel_spritesheet_1
+    21300004: axel_spritesheet_2
+    21300006: axel_spritesheet_3
+    21300008: axel_spritesheet_4
+    21300010: axel_spritesheet_5
+    21300012: axel_spritesheet_6
+    21300014: axel_spritesheet_7
+    21300016: axel_spritesheet_8
+    21300018: axel_spritesheet_9
+    21300020: axel_spritesheet_10
+    21300022: axel_spritesheet_11
+    21300024: axel_spritesheet_12
+    21300026: axel_spritesheet_13
+    21300028: axel_spritesheet_14
+    21300030: axel_spritesheet_15
+    21300032: axel_spritesheet_16
+    21300034: axel_spritesheet_17
+    21300036: axel_spritesheet_18
+    21300038: axel_spritesheet_19
+    21300040: axel_spritesheet_20
+    21300042: axel_spritesheet_21
+    21300044: axel_spritesheet_22
+    21300046: axel_spritesheet_23
+    21300048: axel_spritesheet_24
+    21300050: axel_spritesheet_25
+    21300052: axel_spritesheet_26
+    21300054: axel_spritesheet_27
+    21300056: axel_spritesheet_28
+    21300058: axel_spritesheet_29
+    21300060: axel_spritesheet_30
+    21300062: axel_spritesheet_31
+    21300064: axel_spritesheet_32
+    21300066: axel_spritesheet_33
+    21300068: axel_spritesheet_34
+    21300070: axel_spritesheet_35
+    21300072: axel_spritesheet_36
+    21300074: axel_spritesheet_37
+    21300076: axel_spritesheet_38
+    21300078: axel_spritesheet_39
+    21300080: axel_spritesheet_40
+    21300082: axel_spritesheet_41
+    21300084: axel_spritesheet_42
+    21300086: axel_spritesheet_43
+    21300088: axel_spritesheet_44
+    21300090: axel_spritesheet_45
+    21300092: axel_spritesheet_46
+    21300094: axel_spritesheet_47
+    21300096: axel_spritesheet_48
+    21300098: axel_spritesheet_49
+    21300100: axel_spritesheet_50
+    21300102: axel_spritesheet_51
+    21300104: axel_spritesheet_52
+    21300106: axel_spritesheet_53
+    21300108: axel_spritesheet_54
+    21300110: axel_spritesheet_55
+    21300112: axel_spritesheet_56
+    21300114: axel_spritesheet_57
+    21300116: axel_spritesheet_58
+    21300118: axel_spritesheet_59
+    21300120: axel_spritesheet_60
+    21300122: axel_spritesheet_61
+    21300124: axel_spritesheet_62
+    21300126: axel_spritesheet_63
+    21300128: axel_spritesheet_64
+    21300130: axel_spritesheet_65
+    21300132: axel_spritesheet_66
+    21300134: axel_spritesheet_67
+    21300136: axel_spritesheet_68
+    21300138: axel_spritesheet_69
+    21300140: axel_spritesheet_70
+    21300142: axel_spritesheet_71
+    21300144: axel_spritesheet_72
+    21300146: axel_spritesheet_73
+    21300148: axel_spritesheet_74
+    21300150: axel_spritesheet_75
+    21300152: axel_spritesheet_76
+    21300154: axel_spritesheet_77
+    21300156: axel_spritesheet_78
+    21300158: axel_spritesheet_79
+    21300160: axel_spritesheet_80
+    21300162: axel_spritesheet_81
+    21300164: axel_spritesheet_82
+    21300166: axel_spritesheet_83
+    21300168: axel_spritesheet_84
+    21300170: axel_spritesheet_85
+    21300172: axel_spritesheet_86
+    21300174: axel_spritesheet_87
+    21300176: axel_spritesheet_88
+    21300178: axel_spritesheet_89
+    21300180: axel_spritesheet_90
+    21300182: axel_spritesheet_91
+    21300184: axel_spritesheet_92
+    21300186: axel_spritesheet_93
+    21300188: axel_spritesheet_94
+    21300190: axel_spritesheet_95
+    21300192: axel_spritesheet_96
+    21300194: axel_spritesheet_97
+    21300196: axel_spritesheet_98
+    21300198: axel_spritesheet_99
+    21300200: axel_spritesheet_100
+    21300202: axel_spritesheet_101
+    21300204: axel_spritesheet_102
+    21300206: axel_spritesheet_103
+    21300208: axel_spritesheet_104
+    21300210: axel_spritesheet_105
+    21300212: axel_spritesheet_106
+    21300214: axel_spritesheet_107
+    21300216: axel_spritesheet_108
+    21300218: axel_spritesheet_109
+    21300220: axel_spritesheet_110
+    21300222: axel_spritesheet_111
+    21300224: axel_spritesheet_112
+    21300226: axel_spritesheet_113
+    21300228: axel_spritesheet_114
+    21300230: axel_spritesheet_115
+    21300232: axel_spritesheet_116
+    21300234: axel_spritesheet_117
+    21300236: axel_spritesheet_118
+    21300238: axel_spritesheet_119
+    21300240: axel_spritesheet_120
+    21300242: axel_spritesheet_121
+    21300244: axel_spritesheet_122
+    21300246: axel_spritesheet_123
+    21300248: axel_spritesheet_124
+    21300250: axel_spritesheet_125
+    21300252: axel_spritesheet_126
+    21300254: axel_spritesheet_127
+    21300256: axel_spritesheet_128
+    21300258: axel_spritesheet_129
+    21300260: axel_spritesheet_130
+    21300262: axel_spritesheet_131
+    21300264: axel_spritesheet_132
+    21300266: axel_spritesheet_133
+    21300268: axel_spritesheet_134
+    21300270: axel_spritesheet_135
+    21300272: axel_spritesheet_136
+    21300274: axel_spritesheet_137
+    21300276: axel_spritesheet_138
+    21300278: axel_spritesheet_139
+    21300280: axel_spritesheet_140
+    21300282: axel_spritesheet_141
+    21300284: axel_spritesheet_142
+    21300286: axel_spritesheet_143
+    21300288: axel_spritesheet_144
+    21300290: axel_spritesheet_145
+    21300292: axel_spritesheet_146
+    21300294: axel_spritesheet_147
+    21300296: axel_spritesheet_148
+    21300298: axel_spritesheet_149
+    21300300: axel_spritesheet_150
+    21300302: axel_spritesheet_151
+    21300304: axel_spritesheet_152
+    21300306: axel_spritesheet_153
+    21300308: axel_spritesheet_154
+    21300310: axel_spritesheet_155
+    21300312: axel_spritesheet_156
+    21300314: axel_spritesheet_157
+    21300316: axel_spritesheet_158
+    21300318: axel_spritesheet_159
+    21300320: axel_spritesheet_160
+    21300322: axel_spritesheet_161
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Standalone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: axel_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 926
+        width: 42
+        height: 77
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 926
+        width: 39
+        height: 75
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 926
+        width: 39
+        height: 73
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 926
+        width: 30
+        height: 80
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 926
+        width: 29
+        height: 80
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 926
+        width: 46
+        height: 79
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 926
+        width: 28
+        height: 80
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 926
+        width: 28
+        height: 80
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 926
+        width: 45
+        height: 79
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 822
+        width: 40
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 822
+        width: 38
+        height: 86
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 822
+        width: 46
+        height: 78
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 822
+        width: 56
+        height: 79
+      alignment: 9
+      pivot: {x: .5, y: -.219999999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 822
+        width: 84
+        height: 53
+      alignment: 9
+      pivot: {x: .560000002, y: -.460000008}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 822
+        width: 56
+        height: 83
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 822
+        width: 61
+        height: 77
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 822
+        width: 28
+        height: 96
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 822
+        width: 54
+        height: 79
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 822
+        width: 40
+        height: 81
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 734
+        width: 61
+        height: 76
+      alignment: 9
+      pivot: {x: .660000026, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 734
+        width: 40
+        height: 77
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 734
+        width: 67
+        height: 75
+      alignment: 9
+      pivot: {x: .709999979, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 734
+        width: 39
+        height: 79
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 734
+        width: 43
+        height: 76
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 734
+        width: 81
+        height: 68
+      alignment: 9
+      pivot: {x: .680000007, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 734
+        width: 86
+        height: 68
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 734
+        width: 40
+        height: 79
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 734
+        width: 47
+        height: 79
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 734
+        width: 46
+        height: 75
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 630
+        width: 53
+        height: 77
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 630
+        width: 63
+        height: 75
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 630
+        width: 56
+        height: 70
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 630
+        width: 39
+        height: 80
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 630
+        width: 59
+        height: 78
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 630
+        width: 74
+        height: 81
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 630
+        width: 53
+        height: 81
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 630
+        width: 39
+        height: 87
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 630
+        width: 74
+        height: 76
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 630
+        width: 67
+        height: 60
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 526
+        width: 36
+        height: 77
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 526
+        width: 58
+        height: 75
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 526
+        width: 41
+        height: 90
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 526
+        width: 48
+        height: 79
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 526
+        width: 53
+        height: 70
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 526
+        width: 54
+        height: 67
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 526
+        width: 43
+        height: 64
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 526
+        width: 36
+        height: 86
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 526
+        width: 47
+        height: 81
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 526
+        width: 53
+        height: 88
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 406
+        width: 51
+        height: 109
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 488
+        width: 15
+        height: 30
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 406
+        width: 51
+        height: 99
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 406
+        width: 73
+        height: 48
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 406
+        width: 73
+        height: 48
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 406
+        width: 90
+        height: 69
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 412
+        width: 8
+        height: 8
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 416
+        width: 4
+        height: 4
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 310
+        width: 56
+        height: 74
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 310
+        width: 55
+        height: 75
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 310
+        width: 53
+        height: 84
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 381
+        width: 14
+        height: 13
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 310
+        width: 63
+        height: 67
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 358
+        width: 17
+        height: 8
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 373
+        width: 10
+        height: 6
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 310
+        width: 46
+        height: 66
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 310
+        width: 41
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 310
+        width: 54
+        height: 69
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 206
+        width: 31
+        height: 93
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_68
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 206
+        width: 27
+        height: 80
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 206
+        width: 48
+        height: 67
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_70
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 206
+        width: 46
+        height: 60
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_71
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 206
+        width: 41
+        height: 66
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_72
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 206
+        width: 53
+        height: 63
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_73
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 206
+        width: 57
+        height: 55
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_74
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 206
+        width: 68
+        height: 33
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_75
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 206
+        width: 58
+        height: 54
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_76
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 206
+        width: 87
+        height: 78
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_77
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 94
+        width: 73
+        height: 102
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_78
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 94
+        width: 69
+        height: 103
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_79
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 94
+        width: 91
+        height: 72
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_80
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 94
+        width: 96
+        height: 60
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_81
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 128
+        width: 8
+        height: 7
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_82
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 94
+        width: 84
+        height: 60
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_83
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 120
+        width: 5
+        height: 6
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_84
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 115
+        width: 14
+        height: 4
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_85
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 39
+        height: 69
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_86
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 6
+        width: 27
+        height: 79
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_87
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 6
+        width: 45
+        height: 64
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_88
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 6
+        width: 50
+        height: 77
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_89
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 6
+        width: 67
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_90
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 6
+        width: 79
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_91
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 6
+        width: 87
+        height: 28
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_92
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 6
+        width: 70
+        height: 40
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axel_spritesheet_93
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 6
+        width: 45
+        height: 51
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

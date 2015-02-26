@@ -1,0 +1,43 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="Karate Killers sound effects 4_data" version="1.3.0" audacityversion="2.0.6" sel0="15.6966893424" sel1="16.2191383220" vpos="0" h="11.5519274376" zoom="86.1328125000" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds">
+	<tags/>
+	<wavetrack name="Audio Track" channel="0" linked="1" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="44100" gain="3.162278" pan="0.0">
+		<waveclip offset="0.00000000">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="797952">
+				<waveblock start="0">
+					<simpleblockfile filename="e0000cf2.au" len="177664" min="-0.620618" max="0.549493" rms="0.115168"/>
+				</waveblock>
+				<waveblock start="177664">
+					<simpleblockfile filename="e0000954.au" len="262144" min="-0.58098" max="0.606938" rms="0.111545"/>
+				</waveblock>
+				<waveblock start="439808">
+					<simpleblockfile filename="e0000a55.au" len="262144" min="-0.665207" max="0.694038" rms="0.10084"/>
+				</waveblock>
+				<waveblock start="701952">
+					<simpleblockfile filename="e00007e2.au" len="96000" min="-0.430167" max="0.442825" rms="0.054664"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Audio Track" channel="1" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="44100" gain="3.162278" pan="0.0">
+		<waveclip offset="0.00000000">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="797952">
+				<waveblock start="0">
+					<simpleblockfile filename="e00001c5.au" len="177664" min="-0.620615" max="0.549502" rms="0.115168"/>
+				</waveblock>
+				<waveblock start="177664">
+					<simpleblockfile filename="e00002ed.au" len="262144" min="-0.580994" max="0.606926" rms="0.111547"/>
+				</waveblock>
+				<waveblock start="439808">
+					<simpleblockfile filename="e00007ae.au" len="262144" min="-0.665221" max="0.694011" rms="0.100841"/>
+				</waveblock>
+				<waveblock start="701952">
+					<simpleblockfile filename="e000084d.au" len="96000" min="-0.430166" max="0.442816" rms="0.054667"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>

@@ -1,0 +1,348 @@
+fileFormatVersion: 2
+guid: 0cac6c69046f94d2f80c379dfcb91876
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Linda_0
+    21300002: Linda_1
+    21300004: Linda_2
+    21300006: Linda_3
+    21300008: Linda_4
+    21300010: Linda_5
+    21300012: Linda_6
+    21300014: Linda_7
+    21300016: Linda_8
+    21300018: Linda_9
+    21300020: Linda_10
+    21300022: Linda_11
+    21300024: Linda_12
+    21300026: Linda_13
+    21300028: Linda_14
+    21300030: Linda_15
+    21300032: Linda_16
+    21300034: Linda_17
+    21300036: Linda_18
+    21300038: Linda_19
+    21300040: Linda_20
+    21300042: Linda_21
+    21300044: Linda_22
+    21300046: Linda_23
+    21300048: Linda_24
+    21300050: Linda_25
+    21300052: Linda_26
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Standalone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Linda_0
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 205
+        width: 24
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Linda_1
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 204
+        width: 24
+        height: 61
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Linda_2
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 204
+        width: 16
+        height: 61
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Linda_3
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 204
+        width: 19
+        height: 61
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Linda_4
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 204
+        width: 23
+        height: 61
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Linda_5
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 205
+        width: 23
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Linda_6
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 205
+        width: 23
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Linda_7
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 205
+        width: 21
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Linda_8
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 132
+        width: 27
+        height: 62
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Linda_9
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 132
+        width: 47
+        height: 61
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Linda_10
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 132
+        width: 28
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Linda_11
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 132
+        width: 29
+        height: 61
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Linda_12
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 132
+        width: 47
+        height: 61
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Linda_13
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 132
+        width: 29
+        height: 61
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Linda_14
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 130
+        width: 28
+        height: 64
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Linda_15
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 130
+        width: 22
+        height: 62
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Linda_16
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 130
+        width: 25
+        height: 63
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Linda_17
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 132
+        width: 38
+        height: 61
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Linda_18
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 132
+        width: 24
+        height: 62
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Linda_19
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 132
+        width: 30
+        height: 59
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Linda_20
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 132
+        width: 29
+        height: 58
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Linda_21
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 58
+        width: 25
+        height: 62
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Linda_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 58
+        width: 21
+        height: 63
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Linda_23
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 69
+        width: 47
+        height: 44
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Linda_24
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 74
+        width: 47
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Linda_25
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 77
+        width: 46
+        height: 27
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Linda_26
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 67
+        width: 30
+        height: 44
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

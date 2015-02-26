@@ -1,0 +1,1268 @@
+fileFormatVersion: 2
+guid: 1065e7b3b6a6744cca5478eda45bb00d
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Roper_0
+    21300002: Roper_1
+    21300004: Roper_2
+    21300006: Roper_3
+    21300008: Roper_4
+    21300010: Roper_5
+    21300012: Roper_6
+    21300014: Roper_7
+    21300016: Roper_8
+    21300018: Roper_9
+    21300020: Roper_10
+    21300022: Roper_11
+    21300024: Roper_12
+    21300026: Roper_13
+    21300028: Roper_14
+    21300030: Roper_15
+    21300032: Roper_16
+    21300034: Roper_17
+    21300036: Roper_18
+    21300038: Roper_19
+    21300040: Roper_20
+    21300042: Roper_21
+    21300044: Roper_22
+    21300046: Roper_23
+    21300048: Roper_24
+    21300050: Roper_25
+    21300052: Roper_26
+    21300054: Roper_27
+    21300056: Roper_28
+    21300058: Roper_29
+    21300060: Roper_30
+    21300062: Roper_31
+    21300064: Roper_32
+    21300066: Roper_33
+    21300068: Roper_34
+    21300070: Roper_35
+    21300072: Roper_36
+    21300074: Roper_37
+    21300076: Roper_38
+    21300078: Roper_39
+    21300080: Roper_40
+    21300082: Roper_41
+    21300084: Roper_42
+    21300086: Roper_43
+    21300088: Roper_44
+    21300090: Roper_45
+    21300092: Roper_46
+    21300094: Roper_47
+    21300096: Roper_48
+    21300098: Roper_49
+    21300100: Roper_50
+    21300102: Roper_51
+    21300104: Roper_52
+    21300106: Roper_53
+    21300108: Roper_54
+    21300110: Roper_55
+    21300112: Roper_56
+    21300114: Roper_57
+    21300116: Roper_58
+    21300118: Roper_59
+    21300120: Roper_60
+    21300122: Roper_61
+    21300124: Roper_62
+    21300126: Roper_63
+    21300128: Roper_64
+    21300130: Roper_65
+    21300132: Roper_66
+    21300134: Roper_67
+    21300136: Roper_68
+    21300138: Roper_69
+    21300140: Roper_70
+    21300142: Roper_71
+    21300144: Roper_72
+    21300146: Roper_73
+    21300148: Roper_74
+    21300150: Roper_75
+    21300152: Roper_76
+    21300154: Roper_77
+    21300156: Roper_78
+    21300158: Roper_79
+    21300160: Roper_80
+    21300162: Roper_81
+    21300164: Roper_82
+    21300166: Roper_83
+    21300168: Roper_84
+    21300170: Roper_85
+    21300172: Roper_86
+    21300174: Roper_87
+    21300176: Roper_88
+    21300178: Roper_89
+    21300180: Roper_90
+    21300182: Roper_91
+    21300184: Roper_92
+    21300186: Roper_93
+    21300188: Roper_94
+    21300190: Roper_95
+    21300192: Roper_96
+    21300194: Roper_97
+    21300196: Roper_98
+    21300198: Roper_99
+    21300200: Roper_100
+    21300202: Roper_101
+    21300204: Roper_102
+    21300206: Roper_103
+    21300208: Roper_104
+    21300210: Roper_105
+    21300212: Roper_106
+    21300214: Roper_107
+    21300216: Roper_108
+    21300218: Roper_109
+    21300220: Roper_110
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Roper_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 528
+        width: 21
+        height: 61
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 528
+        width: 28
+        height: 61
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 528
+        width: 28
+        height: 63
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_3
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 528
+        width: 17
+        height: 61
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 528
+        width: 23
+        height: 62
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_5
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 528
+        width: 22
+        height: 61
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_6
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 528
+        width: 24
+        height: 62
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_7
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 528
+        width: 24
+        height: 61
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_8
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 456
+        width: 28
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_9
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 456
+        width: 46
+        height: 58
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_10
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 456
+        width: 27
+        height: 59
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_11
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 456
+        width: 25
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_12
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 456
+        width: 45
+        height: 59
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_13
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 456
+        width: 27
+        height: 58
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_14
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 384
+        width: 43
+        height: 40
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_15
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 28
+        height: 55
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_16
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 384
+        width: 16
+        height: 64
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 28
+        height: 55
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_18
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 384
+        width: 30
+        height: 64
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_19
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 384
+        width: 37
+        height: 41
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_20
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 45
+        height: 40
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_21
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 312
+        width: 27
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_22
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 312
+        width: 43
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_23
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 312
+        width: 25
+        height: 62
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_24
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 312
+        width: 32
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_25
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 312
+        width: 28
+        height: 58
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_26
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 312
+        width: 29
+        height: 57
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_27
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 312
+        width: 26
+        height: 58
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_28
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 312
+        width: 30
+        height: 58
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_29
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 312
+        width: 29
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_30
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 240
+        width: 23
+        height: 62
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_31
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 240
+        width: 23
+        height: 62
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_32
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 240
+        width: 23
+        height: 64
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_33
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 240
+        width: 23
+        height: 62
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_34
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 240
+        width: 22
+        height: 63
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_35
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 240
+        width: 22
+        height: 62
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_36
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 240
+        width: 22
+        height: 63
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_37
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 240
+        width: 22
+        height: 62
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_38
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 168
+        width: 28
+        height: 61
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_39
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 168
+        width: 41
+        height: 61
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_40
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 168
+        width: 41
+        height: 59
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_41
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 168
+        width: 24
+        height: 61
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_42
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 168
+        width: 25
+        height: 62
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_43
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 168
+        width: 21
+        height: 61
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_44
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 168
+        width: 22
+        height: 61
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_45
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 168
+        width: 22
+        height: 62
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_46
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 96
+        width: 32
+        height: 42
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_47
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 32
+        height: 43
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_48
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 96
+        width: 31
+        height: 47
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_49
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 21
+        height: 53
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_50
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 102
+        width: 37
+        height: 26
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_51
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 96
+        width: 4
+        height: 7
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_52
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 27
+        height: 61
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_53
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 96
+        width: 24
+        height: 64
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_54
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 24
+        width: 21
+        height: 52
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_55
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 24
+        width: 46
+        height: 45
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_56
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 24
+        width: 47
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_57
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 24
+        width: 48
+        height: 30
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_58
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 24
+        width: 30
+        height: 43
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_59
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 24
+        width: 21
+        height: 61
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_60
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 13
+        width: 5
+        height: 7
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_61
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 13
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_62
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 11
+        width: 4
+        height: 7
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_63
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 13
+        width: 8
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_64
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 13
+        width: 12
+        height: 7
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_65
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 13
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_66
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 13
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_67
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 13
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_68
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 13
+        width: 6
+        height: 7
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_69
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 13
+        width: 7
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_70
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 11
+        width: 4
+        height: 7
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_71
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 13
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_72
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 13
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_73
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 13
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_74
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 11
+        width: 4
+        height: 7
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_75
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 13
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_76
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 13
+        width: 6
+        height: 7
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_77
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 13
+        width: 4
+        height: 7
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_78
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 13
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_79
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 13
+        width: 6
+        height: 7
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_80
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 13
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_81
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 13
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_82
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 13
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_83
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 13
+        width: 6
+        height: 7
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_84
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 13
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_85
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 13
+        width: 7
+        height: 7
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_86
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 11
+        width: 4
+        height: 7
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_87
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 11
+        width: 4
+        height: 7
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_88
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 13
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_89
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 11
+        width: 4
+        height: 7
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_90
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 13
+        width: 5
+        height: 7
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_91
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 13
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_92
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 13
+        width: 5
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_93
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 13
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_94
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 13
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_95
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 13
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_96
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 11
+        width: 9
+        height: 7
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_97
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 13
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_98
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 13
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_99
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 13
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_100
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 13
+        width: 7
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_101
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 13
+        width: 5
+        height: 7
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_102
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 13
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_103
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 13
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_104
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 13
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_105
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 13
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_106
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 13
+        width: 8
+        height: 6
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_107
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 13
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_108
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 13
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_109
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 13
+        width: 12
+        height: 6
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roper_110
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 13
+        width: 8
+        height: 5
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
