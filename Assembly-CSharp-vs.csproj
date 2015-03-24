@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{FDC2D863-78A3-7222-87F3-F01906D57E79}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_2;UNITY_4_6;UNITY_WEBPLAYER;WEBPLUG;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_IL2CPP;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;UNITY5_SCRIPTING_IN_UNITY4;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Code\BackgroundParallax.cs" />
+     <Compile Include="Assets\Code\BoundaryScript.cs" />
+     <Compile Include="Assets\Code\EnemyAI.cs" />
+     <Compile Include="Assets\Code\GlobalConstants.cs" />
+     <Compile Include="Assets\Code\StopScrolling.cs" />
+     <Compile Include="Assets\EnemySpawnScript.cs" />
+     <Compile Include="Assets\GoScript.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\GameScene-3DPlataform\Scripts\ChangeProjectionCamera.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\GameScene-Isometric\Scripts\Character2DIsometricController.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\GameScene-Isometric\Scripts\IsometricGameController.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\GameScene-Isometric\Scripts\IsometricTrigger2DLoadMap.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\GameScene-Plataform\Scripts\CC2DTriggerHelper.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\GameScene-Plataform\Scripts\CharacterController2D.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\GameScene-Plataform\Scripts\NonPhysicsPlayerTester.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\GameScene-Plataform\Scripts\PhysicsPlayerTester.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\GameScene-TopView\Scripts\Camera\CameraFolow2D.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\GameScene-TopView\Scripts\Character\Character2DController.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\GameScene-TopView\Scripts\Character\RespawnPoint.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\GameScene-TopView\Scripts\Enemies\Enemy2DAbstract.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\GameScene-TopView\Scripts\Enemies\Enemy2DStay.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\GameScene-TopView\Scripts\UI\RefreshGUITextPlayerPrefs.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\GameScene-TopView\Scripts\Utils\ClearPlayerPrefs.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\GameScene-TopView\Scripts\Utils\NextLevelByKey.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\GameScene-TopView\Scripts\Utils\PermantDestroyPlayerPrefs.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\GameScene-TopView\Scripts\Utils\Trigger2DLoadMap.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\GameScene-TopView\Scripts\Utils\Trigger2DNextScene.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\GameScene-TopView\Scripts\Utils\Trigger2DRespawnSave.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\GameScene-TopView\Scripts\Utils\TriggerChangeObjects.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\GameScene-TopView\Scripts\Utils\TriggerCollision2DDestroy.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\GameScene-TopView\Scripts\Utils\TriggerShowObject.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\OtherExampleScenes\Scripts\BackButtonScript.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\OtherExampleScenes\Scripts\CameraController.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\OtherExampleScenes\Scripts\MapLoader.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\OtherExampleScenes\Scripts\MapLoaderStreamed.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\OtherExampleScenes\Scripts\MouseTestScript.cs" />
+     <Compile Include="Assets\X-UniTMX Examples\OtherExampleScenes\Scripts\StartingSceneScript.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\ImageLayer.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\Layer.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\Map.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\MapObject.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\MapObjectLayer.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\Object.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\Property.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\PropertyCollection.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\Tile.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\TileAnimation.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\TileGrid.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\TileLayer.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\TileObject.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\TileSet.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\TiledMapComponent.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\Utils\AnimatedSprite.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\Utils\MathfExtensions.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\Utils\SortingOrderAutoCalculator.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\Utils\TaskManager.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\Utils\Triangulator.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\Utils\clipper.cs" />
+     <Compile Include="Assets\X-UniTMX\NanoXML\NanoXMLParser.cs" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\X-UniTMX\ObjectTypesForTiled.xml" />
+     <None Include="Assets\Resources\GameMaps\Level tiles.xml" />
+     <None Include="Assets\Resources\GameMaps\test_tiles.xml" />
+     <None Include="Assets\Resources\GameMaps\test_tiles2.xml" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>/Users/permindersuman/Documents/Game Programming/Unity/UnityFighter2D/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Ionic.Zlib">
+ <HintPath>/Users/permindersuman/Documents/Game Programming/Unity/UnityFighter2D/Assets/X-UniTMX/Ionic.Zlib.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{BBC15716-1042-771F-3E27-703378775CAB}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

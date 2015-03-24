@@ -1,21 +1,25 @@
 ﻿#pragma strict
 
 var speed : float = 0.05;
-var targetPosition : Vector3;
 var facingRight : boolean;
 var startingHealth : int = 100;
 var hitSound : AudioClip;
 var kickedSound : AudioClip;
 var deadSound : AudioClip;
 var hitsToFall : int;
-private var anim : Animator;
+private var player : GameObject;
 
+private var levelScript : LevelScript;
+
+private var anim : Animator;
 private var enemyState : int;
 private var enemyHealth : int;
 private var timer : float;
 private var velocityY : float;
 private var hitCount : int;
 private var timeSinceLastHit : float;
+private var stateSwitchTimer : float;
+private var nextStateTime : int;
 
 private var ENEMY_IDLE = 0;
 private var ENEMY_WALKING = 1;
@@ -26,14 +30,26 @@ private var ENEMY_JUMPING = 5;
 private var ENEMY_HIT = 6;
 private var ENEMY_FALLING = 7;
 private var ENEMY_DOWN = 8;
+private var ENEMY_WALKING_BACK = 9;
 
 function Start () {
 
-	anim = GetComponent("Animator");
+	anim = GetComponent(Animator);
+	player = GameObject.Find("Player");
 	facingRight = true;
+	Reset();
+	
+	var level : GameObject = GameObject.Find("Level");
+	levelScript = level.GetComponent("LevelScript");
+}
+
+function Reset()
+{
 	enemyState = ENEMY_WALKING;
 	enemyHealth = startingHealth;
 	hitCount = 0;
+	stateSwitchTimer = Time.time;
+	setNextStateTime();
 }
 
 function Update () {
@@ -48,23 +64,24 @@ function Update () {
 
 		case ENEMY_WALKING:
 		
-			// Find player position
-			var player = GameObject.Find("Player");
-			
 			if (player != null)
 			{
-				var playerPosition = player.transform.position;
-					
-				// Set this object's target position to the player position
-				targetPosition = playerPosition;
+			
+				if (Time.time - stateSwitchTimer > nextStateTime) 
+				{
+					stateSwitchTimer = Time.time;
+					setNextStateTime();
+					enemyState = ENEMY_WALKING_BACK;
+				}
 				
-				var distanceTmp = targetPosition - this.transform.position;
 				
+				var distanceTmp = player.transform.position - this.transform.position;
+			
 				// Move this
 				this.transform.position += distanceTmp.normalized * speed;
-	//			this.transform.position.y = 0.0;
 				
-				var directionToCharacter = playerPosition - this.transform.position;
+				// Make sprite face the player
+				var directionToCharacter = player.transform.position - this.transform.position;
 				directionToCharacter.y = 0;
 				
 				if (directionToCharacter.x < 0 && facingRight)
@@ -83,6 +100,38 @@ function Update () {
 			
 			anim.Play("Walk");
 			
+		break;
+		
+		case ENEMY_WALKING_BACK:
+			
+			if (player != null)
+			{
+				distanceTmp = player.transform.position - this.transform.position;
+				this.transform.position -= distanceTmp.normalized * speed/2;
+				
+				directionToCharacter = player.transform.position - this.transform.position;
+				directionToCharacter.y = 0;
+				
+				if (directionToCharacter.x < 0 && facingRight)
+				{
+					transform.localScale.x *= -1;
+					facingRight = false;
+				}
+				else if (directionToCharacter.x > 0 && !facingRight)
+				{
+					transform.localScale.x *= -1;
+					facingRight = true;
+				}
+					
+				if (Time.time - stateSwitchTimer > nextStateTime) 
+				{
+					stateSwitchTimer = Time.time;
+					setNextStateTime();
+					enemyState = ENEMY_WALKING;
+				}
+			
+				checkPunch();
+			}
 		break;
 		
 		case ENEMY_HIT:
@@ -129,7 +178,11 @@ function Update () {
 //					this.active = false;
 					gameObject.SetActive(false);
 					
-//					var level : GameObject = GameObject.Find("Gameplay");
+					if (levelScript.CountEnemies() == 0)
+					{
+//						levelScript.ProgressToNextSection();
+						levelScript.SetGameState(1);
+					}
 					
 //					Debug.Log("num enemies = "+level.GetComponent(Level).countEnemies());
 					// If defeated all enemies, progress level and spawn new enemies
@@ -276,4 +329,9 @@ function checkPunch()
 function getState()
 {
 	return enemyState;
+}
+
+function setNextStateTime()
+{
+	nextStateTime = Random.Range(2,6);
 }

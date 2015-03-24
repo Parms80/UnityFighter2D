@@ -26,13 +26,15 @@ private var health : int;
 private var attackMove : int;
 private var timeSinceLastHit : float;
 private var hitCount : int;
+private var freezeStartTime : int;
+private var frozen : boolean;
 
 //private var punchingHash = Animator.StringToHash("punching");
 	
 private var playerState : int;
 
-private var PLAYER_STANDING = 0;
-private var PLAYER_WALKING = 1;
+public static var PLAYER_STANDING = 0;
+public static var PLAYER_WALKING = 1;
 private var PLAYER_PUNCHING = 2;
 private var PLAYER_PUNCHING_2 = 3;
 private var PLAYER_KICKING = 4;
@@ -54,13 +56,14 @@ private var stateStrings = ["PLAYER_STANDING",
 							"PLAYER_DOWN"];
 
 function Start () {
-	anim = GetComponent("Animator");
+	anim = GetComponent(Animator);
 	xScale = transform.localScale.x; // Get correct orientation for player
 	playerState = PLAYER_STANDING;
 	groundCheck = transform.Find("groundCheck");
 	health = 100;
 	hitCount = 0;
 	Debug.Log("this = "+this);
+	frozen = false;
 }
 
 function Update () {
@@ -70,9 +73,24 @@ function Update () {
 	jumpPressed = Input.GetKeyDown(KeyCode.X);
 	horizontalInput = Input.GetAxisRaw("Horizontal");
 	verticalInput = Input.GetAxisRaw("Vertical");	
-	
+
 	grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
 
+	if (frozen)
+	{
+		var	freezeTime = Time.time - freezeStartTime;
+		Debug.Log("Freeze time = "+freezeTime);
+		if (freezeTime > 0.5)
+		{
+			frozen = false;
+//			Time.timeScale = 1;
+		
+//			rigidbody2D.isKinematic = true;
+			anim.speed = 1;
+		}
+	}
+	else
+	{
     switch (playerState)
     {
     	case PLAYER_STANDING:
@@ -174,7 +192,6 @@ function Update () {
 		
 		case PLAYER_FALLING:
 		
-			Debug.Log("Player falling");
 			if (this.transform.position.y <= 0.0 && this.rigidbody2D.velocity.y < 0.0f)
 			{
 				playerState = PLAYER_DOWN;
@@ -207,7 +224,7 @@ function Update () {
 //		anim.SetInteger("attack move", 0);
 		attackMove = 0;
 	}
-		
+	}
 }
 
 function doPlayerWalk()
@@ -273,7 +290,7 @@ function doPunch(move : int)
 		anim.Play("player_cross", 0);
 	}
 	
-	checkHitEnemy();
+//	checkHitEnemy();
 }
 
 function doKick()
@@ -293,7 +310,7 @@ function doKick()
 		anim.Play("kick_1");
 	}
 	
-	checkHitEnemy();
+//	checkHitEnemy();
 }
 
 function doJump()
@@ -307,6 +324,7 @@ function doJump()
 	AudioSource.PlayClipAtPoint(jumpSound, this.transform.position);
 }
 
+/*
 function checkHitEnemy()
 {
 	for (var enemy : GameObject in GameObject.FindGameObjectsWithTag("Enemy"))
@@ -337,6 +355,7 @@ function checkHitEnemy()
 		}
 	}
 }
+*/
 
 function Hit (damage : int) {
 	health -= damage;
@@ -405,4 +424,22 @@ function GetState()
 function GetStateString()
 {
 	return stateStrings;
+}
+
+function SetPauseTime()
+{
+//	Time.timeScale = 0;
+	freezeStartTime = Time.time;	
+//	frozen = true;
+//	rigidbody2D.isKinematic = true;
+//	var gravity = rigidbody2D.gravityScale;
+	anim.speed = 0;
+//	rigidbody2D.velocity = Vector3(0,0,0);
+//	rigidbody2D.gravityScale = 0;
+	yield WaitForSeconds(0.1);
+	
+	anim.speed = 1;
+//	rigidbody2D.gravityScale = gravity;
+//	rigidbody2D.isKinematic = false;
+	
 }
