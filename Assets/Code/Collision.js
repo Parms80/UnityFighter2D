@@ -4,27 +4,18 @@
 	var playerScript = gameObject.GetComponent("PlayerScript");
 	var playerState = playerScript.GetState();
 	
-	if (coll.gameObject.tag == "EnemyCollision" && playerState != 7 && playerState != 9)
+	if (coll.gameObject.tag == "EnemyCollision")
 	{
-		this.SendMessage("Hit", 10);
+		var enemyScript = coll.transform.parent.gameObject.GetComponent("EnemyScript");
+		var enemyState = enemyScript.getState();
+		
+		if (enemyState == 10)
+		{
+			this.SendMessage("knockDown", 10);
+		}
+		else if (playerState != 7 && playerState != 9)
+		{
+			this.SendMessage("Hit", 10);
+		}
 	}
-	
-//	
-//	if (coll.gameObject.tag == "Enemy")
-//	{
-//		var anim : Animator;
-//		anim = GetComponent("Animator");
-//		
-//		var playerState = anim.GetComponent("playerState");
-//		
-////		if (anim.GetBool("punch"))
-//		Debug.Log("Collision.js: playerState = "+playerState);
-//		if (playerState == anim.GetComponent("PLAYER_PUNCHING"))
-//		{
-//			Debug.Log("Player Hit");
-//			
-//			var enemy = GameObject.FindGameObjectWithTag("Enemy");	
-//			enemy.SendMessage("Hit", 10);
-//		}
-//	}	
 }

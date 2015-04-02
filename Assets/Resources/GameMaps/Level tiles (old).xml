@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="32" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="leveltiles" tilewidth="32" tileheight="32">
+  <image source="leveltiles.png" width="256" height="256"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="100" height="32">
+  <data encoding="base64" compression="zlib">
+   eJzt1ssKwjAUhOFYd7Ybr+AVvILufP+XcwKJBuHQVfEQ/w+GwjDaQiltCAAAAAAAAAAAAAAAYJICH+K9aH59EXiL9yI/Hw9j462vWRM+z8fU2HjrazZOidbGxltfs/L9cTQ2sZ8pc2WhLJVVz37Ivmbl99Xd2MR+o2yVnbJXDj37Ifua5fd5qzzTsUvHtuhPylm5KFflVuzL33Sp//6Pzthb5837fzNyHgCATy9xzQj+
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 1">
+  <object x="4.79451" y="897.38" width="1274.89" height="30.4273"/>
+  <object x="63.9678" y="644.059">
+   <polyline points="0,0 0.0322468,251.941"/>
+  </object>
+ </objectgroup>
+</map>

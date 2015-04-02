@@ -6,7 +6,12 @@ var startingHealth : int = 100;
 var hitSound : AudioClip;
 var kickedSound : AudioClip;
 var deadSound : AudioClip;
+var jumpSound : AudioClip;
+var jumpStrength : int;
 var hitsToFall : int;
+var flyKickEnabled : boolean;
+
+
 private var player : GameObject;
 
 private var levelScript : LevelScript;
@@ -20,6 +25,8 @@ private var hitCount : int;
 private var timeSinceLastHit : float;
 private var stateSwitchTimer : float;
 private var nextStateTime : int;
+private var grounded : boolean;
+private var groundCheck : Transform;
 
 private var ENEMY_IDLE = 0;
 private var ENEMY_WALKING = 1;
@@ -31,12 +38,14 @@ private var ENEMY_HIT = 6;
 private var ENEMY_FALLING = 7;
 private var ENEMY_DOWN = 8;
 private var ENEMY_WALKING_BACK = 9;
+private var ENEMY_FLYING_KICK = 10;
 
 function Start () {
 
 	anim = GetComponent(Animator);
 	player = GameObject.Find("Player");
 	facingRight = true;
+	groundCheck = transform.Find("groundCheck");
 	Reset();
 	
 	var level : GameObject = GameObject.Find("Level");
@@ -54,6 +63,8 @@ function Reset()
 
 function Update () {
 
+	grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
+
 	switch (enemyState)
 	{
 		case ENEMY_IDLE:
@@ -65,20 +76,24 @@ function Update () {
 		case ENEMY_WALKING:
 		
 			if (player != null)
-			{
-			
-				if (Time.time - stateSwitchTimer > nextStateTime) 
+			{	
+				var distanceTmp = player.transform.position - this.transform.position;
+				var playerState : int = player.GetComponent(PlayerScript).GetState();
+				
+				// Check if player is close and walking towards them
+				if (Mathf.Abs(distanceTmp.x) < 4.0f && playerState == 1 && 
+					Time.time - stateSwitchTimer > nextStateTime)
 				{
+					// Walk backwards
 					stateSwitchTimer = Time.time;
 					setNextStateTime();
 					enemyState = ENEMY_WALKING_BACK;
 				}
-				
-				
-				var distanceTmp = player.transform.position - this.transform.position;
-			
-				// Move this
-				this.transform.position += distanceTmp.normalized * speed;
+				else
+				{
+					// Walk forwards
+					this.transform.position += distanceTmp.normalized * speed;
+				}
 				
 				// Make sprite face the player
 				var directionToCharacter = player.transform.position - this.transform.position;
@@ -127,7 +142,15 @@ function Update () {
 				{
 					stateSwitchTimer = Time.time;
 					setNextStateTime();
-					enemyState = ENEMY_WALKING;
+
+					if (flyKickEnabled)
+					{
+						doFlyingKick();
+					}
+					else
+					{
+						enemyState = ENEMY_WALKING;
+					}
 				}
 			
 				checkPunch();
@@ -217,6 +240,16 @@ function Update () {
 //				anim.StopPlayback();
 			}
 			
+		break;
+		
+		case ENEMY_FLYING_KICK:
+		
+			
+			if (grounded)
+			{
+				enemyState = ENEMY_IDLE;
+//				anim.SetBool("is jumping", false);
+			}
 		break;
 			
 	}
@@ -326,12 +359,30 @@ function checkPunch()
 	}
 }
 
-function getState()
+function doFlyingKick()
+{
+	anim.StopPlayback();
+	enemyState = ENEMY_FLYING_KICK;
+	
+	if (facingRight)
+	{	
+		rigidbody2D.AddForce(new Vector2(1000f, jumpStrength));
+	}
+	else
+	{
+		rigidbody2D.AddForce(new Vector2(-1000f, jumpStrength));
+	}
+	
+	anim.Play("Flying kick");
+	AudioSource.PlayClipAtPoint(jumpSound, this.transform.position);
+}
+
+public function getState()
 {
 	return enemyState;
 }
 
 function setNextStateTime()
 {
-	nextStateTime = Random.Range(2,6);
+	nextStateTime = Random.Range(1,3);
 }

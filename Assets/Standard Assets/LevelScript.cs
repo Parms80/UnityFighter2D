@@ -59,11 +59,16 @@ public class LevelScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		if (Input.GetKey("escape"))
+		{
+			Application.Quit();
+		}
+
 		switch (gameState)
 		{
 		case GAMESTATE_CLEARED_ENEMIES:
 
-			if (player.position.x > leftStopTrigger.transform.position.x)
+			if (player.position.x > leftStopTrigger.transform.position.x && currentSection < 1)
 			{
 				ProgressToNextSection();
 				SetGameState(GAMESTATE_NEXT_SECTION);
