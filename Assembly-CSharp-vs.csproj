@@ -49,7 +49,6 @@
      <Compile Include="Assets\Code\BackgroundParallax.cs" />
      <Compile Include="Assets\Code\BoundaryScript.cs" />
      <Compile Include="Assets\Code\EnemyAI.cs" />
-     <Compile Include="Assets\Code\GlobalConstants.cs" />
      <Compile Include="Assets\Code\StopScrolling.cs" />
      <Compile Include="Assets\EnemySpawnScript.cs" />
      <Compile Include="Assets\GoScript.cs" />
@@ -107,7 +106,6 @@
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\X-UniTMX\ObjectTypesForTiled.xml" />
      <None Include="Assets\Resources\GameMaps\Level tiles.xml" />
-     <None Include="Assets\Resources\GameMaps\Level tiles (new).xml" />
      <None Include="Assets\Resources\GameMaps\test_tiles.xml" />
      <None Include="Assets\Resources\GameMaps\test_tiles2.xml" />
      <None Include="Assets\Resources\GameMaps\Level tiles (old).xml" />

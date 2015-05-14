@@ -28,17 +28,6 @@ private var nextStateTime : int;
 private var grounded : boolean;
 private var groundCheck : Transform;
 
-private var ENEMY_IDLE = 0;
-private var ENEMY_WALKING = 1;
-private var ENEMY_PUNCHING = 2;
-private var ENEMY_PUNCHING_2 = 3;
-private var ENEMY_KICKING = 4;
-private var ENEMY_JUMPING = 5;
-private var ENEMY_HIT = 6;
-private var ENEMY_FALLING = 7;
-private var ENEMY_DOWN = 8;
-private var ENEMY_WALKING_BACK = 9;
-private var ENEMY_FLYING_KICK = 10;
 
 function Start () {
 
@@ -54,7 +43,7 @@ function Start () {
 
 function Reset()
 {
-	enemyState = ENEMY_WALKING;
+	enemyState = Constants.ENEMY_WALKING;
 	enemyHealth = startingHealth;
 	hitCount = 0;
 	stateSwitchTimer = Time.time;
@@ -67,13 +56,13 @@ function Update () {
 
 	switch (enemyState)
 	{
-		case ENEMY_IDLE:
+		case Constants.ENEMY_IDLE:
 			
-			enemyState = ENEMY_WALKING;
+			enemyState = Constants.ENEMY_WALKING;
 		
 		break;
 
-		case ENEMY_WALKING:
+		case Constants.ENEMY_WALKING:
 		
 			if (player != null)
 			{	
@@ -87,7 +76,7 @@ function Update () {
 					// Walk backwards
 					stateSwitchTimer = Time.time;
 					setNextStateTime();
-					enemyState = ENEMY_WALKING_BACK;
+					enemyState = Constants.ENEMY_WALKING_BACK;
 				}
 				else
 				{
@@ -117,7 +106,7 @@ function Update () {
 			
 		break;
 		
-		case ENEMY_WALKING_BACK:
+		case Constants.ENEMY_WALKING_BACK:
 			
 			if (player != null)
 			{
@@ -149,7 +138,7 @@ function Update () {
 					}
 					else
 					{
-						enemyState = ENEMY_WALKING;
+						enemyState = Constants.ENEMY_WALKING;
 					}
 				}
 			
@@ -157,18 +146,18 @@ function Update () {
 			}
 		break;
 		
-		case ENEMY_HIT:
+		case Constants.ENEMY_HIT:
 			
 			timeSinceLastHit = Time.time;
 			
 			if (Time.time - timer > 0.1)
 			{
-				enemyState = ENEMY_IDLE;
+				enemyState = Constants.ENEMY_IDLE;
 				anim.StopPlayback();
 			}
 		break;	
 		
-		case ENEMY_FALLING:
+		case Constants.ENEMY_FALLING:
 //			player = GameObject.Find("Player");
 //			playerPosition = player.transform.position;
 //			directionToCharacter = playerPosition - this.transform.position;
@@ -187,12 +176,12 @@ function Update () {
 			
 			if (this.transform.position.y <= 0.0)
 			{
-				enemyState = ENEMY_DOWN;
+				enemyState = Constants.ENEMY_DOWN;
 				timer = Time.time;
 			}
 		break;
 		
-		case ENEMY_DOWN:
+		case Constants.ENEMY_DOWN:
 		
 			if (Time.time - timer > 1.0)
 			{
@@ -226,28 +215,28 @@ function Update () {
 				}
 				else
 				{
-					enemyState = ENEMY_IDLE;
+					enemyState = Constants.ENEMY_IDLE;
 				}
 			}
 		break;
 		
-		case ENEMY_PUNCHING:
+		case Constants.ENEMY_PUNCHING:
 		
 //			if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Punch"))
 			if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !anim.IsInTransition(0))
 			{
-				enemyState = ENEMY_IDLE;
+				enemyState = Constants.ENEMY_IDLE;
 //				anim.StopPlayback();
 			}
 			
 		break;
 		
-		case ENEMY_FLYING_KICK:
+		case Constants.ENEMY_FLYING_KICK:
 		
 			
 			if (grounded)
 			{
-				enemyState = ENEMY_IDLE;
+				enemyState = Constants.ENEMY_IDLE;
 //				anim.SetBool("is jumping", false);
 			}
 		break;
@@ -272,14 +261,14 @@ function Hit (args : int[]) {
 	
 	if (enemyHealth <= 0 || hitCount == hitsToFall) 
 	{
-//		enemyState = ENEMY_FALLING;
+//		enemyState = Constants.ENEMY_FALLING;
 //		anim.Play("Fall", 0);
 //		velocityY = 0.03;
 		knockDown(damage);
 	}
 	else
 	{
-		enemyState = ENEMY_HIT;
+		enemyState = Constants.ENEMY_HIT;
 		anim.Play("Hit", 0);
 		timer = Time.time;
 	}
@@ -296,7 +285,7 @@ function Hit (args : int[]) {
 
 function knockDown (damage : int) {
 
-	enemyState = ENEMY_FALLING;
+	enemyState = Constants.ENEMY_FALLING;
 	anim.Play("Fall", 0);
 	velocityY = 0.03;
 	AudioSource.PlayClipAtPoint(hitSound, this.transform.position);
@@ -326,7 +315,7 @@ function knockDown (damage : int) {
 
 function isEnemyWalking()
 {
-	if (enemyState == ENEMY_WALKING)
+	if (enemyState == Constants.ENEMY_WALKING)
 	{
 		return true;
 	}
@@ -353,7 +342,7 @@ function checkPunch()
 			anim.StopPlayback();
 //			player.SendMessage("Hit", 10);
 			anim.Play("Punch");
-			enemyState = ENEMY_PUNCHING;
+			enemyState = Constants.ENEMY_PUNCHING;
 //			timer = Time.time;
 		}
 	}
@@ -362,7 +351,7 @@ function checkPunch()
 function doFlyingKick()
 {
 	anim.StopPlayback();
-	enemyState = ENEMY_FLYING_KICK;
+	enemyState = Constants.ENEMY_FLYING_KICK;
 	
 	if (facingRight)
 	{	

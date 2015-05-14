@@ -9,11 +9,11 @@
 		var enemyScript = coll.transform.parent.gameObject.GetComponent("EnemyScript");
 		var enemyState = enemyScript.getState();
 		
-		if (enemyState == 10)
+		if (enemyState == Constants.ENEMY_FLYING_KICK)
 		{
 			this.SendMessage("knockDown", 10);
 		}
-		else if (playerState != 7 && playerState != 9)
+		else if (playerState != Constants.PLAYER_FALLING && playerState != Constants.PLAYER_DOWN)
 		{
 			this.SendMessage("Hit", 10);
 		}

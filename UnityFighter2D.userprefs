@@ -1,19 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Standard Assets/LevelScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Code/PlayerScript.js">
     <Files>
-      <File FileName="Assets/Standard Assets/LevelScript.cs" Line="66" Column="3" />
-      <File FileName="Assets/Code/EnemyCollision.js" Line="1" Column="1" />
-      <File FileName="Assets/Code/PlayerScript.js" Line="386" Column="1" />
-      <File FileName="Assets/Code/EnemyScript.js" Line="84" Column="44" />
-      <File FileName="Assets/EnemySpawnScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/Code/Collision.js" Line="1" Column="1" />
+      <File FileName="Assets/Code/PlayerScript.js" Line="69" Column="12" />
+      <File FileName="Assets/Code/StopScrolling.cs" Line="21" Column="1" />
+      <File FileName="Assets/Standard Assets/NewObjectPoolScript.cs" Line="9" Column="31" />
+      <File FileName="Assets/Standard Assets/LevelScript.cs" Line="11" Column="37" />
+      <File FileName="Assets/EnemySpawnScript.cs" Line="19" Column="4" />
+      <File FileName="Assets/Code/Constants.js" Line="21" Column="8" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True" selected="True" />
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

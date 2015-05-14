@@ -8,7 +8,6 @@ function Start()
 	player = GameObject.FindGameObjectWithTag("Player");
 	playerScript = player.GetComponent(PlayerScript);
 	enemyScript = gameObject.GetComponent(EnemyScript);
-	constants = GameObject.Find("GlobalConstants");
 }
 
 function OnTriggerEnter2D(coll: Collider2D) {
@@ -17,8 +16,9 @@ function OnTriggerEnter2D(coll: Collider2D) {
 	{
 		var playerState = playerScript.GetState();
 		
-//		if (playerState == constants.PLAYER_PUNCHING || playerState == 3 || playerState == 4)
-		if (playerState == 2 || playerState == 3 || playerState == 4)
+		if (playerState == Constants.PLAYER_PUNCHING || 
+			playerState == Constants.PLAYER_PUNCHING_2 || 
+			playerState == Constants.PLAYER_KICKING)
 		{
 //			Debug.Log("Enemy Hit");
 			
@@ -30,7 +30,7 @@ function OnTriggerEnter2D(coll: Collider2D) {
 			this.SendMessage("Hit", args);
 //			playerScript.SetPauseTime();
 		}
-		else if (playerState == 6)
+		else if (playerState == Constants.PLAYER_FLYING_KICK)
 		{
 			this.SendMessage("knockDown", 10);
 			

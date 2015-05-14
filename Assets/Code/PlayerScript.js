@@ -33,36 +33,15 @@ private var frozen : boolean;
 	
 private var playerState : int;
 
-public static var PLAYER_STANDING = 0;
-public static var PLAYER_WALKING = 1;
-private var PLAYER_PUNCHING = 2;
-private var PLAYER_PUNCHING_2 = 3;
-private var PLAYER_KICKING = 4;
-private var PLAYER_JUMPING = 5;
-private var PLAYER_FLYING_KICK = 6;
-private var PLAYER_FALLING = 7;
-private var PLAYER_HIT = 8;
-private var PLAYER_DOWN = 9;
 
-private var stateStrings = ["PLAYER_STANDING", 
-							"PLAYER_WALKING",
-							"PLAYER_PUNCHING",
-							"PLAYER_PUNCHING_2",
-							"PLAYER_KICKING",
-							"PLAYER_JUMPING",
-							"PLAYER_FLYING_KICK",
-							"PLAYER_FALLING",
-							"PLAYER_HIT",
-							"PLAYER_DOWN"];
 
 function Start () {
 	anim = GetComponent(Animator);
 	xScale = transform.localScale.x; // Get correct orientation for player
-	playerState = PLAYER_STANDING;
+	playerState = Constants.PLAYER_STANDING;
 	groundCheck = transform.Find("groundCheck");
 	health = 100;
 	hitCount = 0;
-	Debug.Log("this = "+this);
 	frozen = false;
 }
 
@@ -93,8 +72,8 @@ function Update () {
 	{
     switch (playerState)
     {
-    	case PLAYER_STANDING:
-    	case PLAYER_WALKING:
+    	case Constants.PLAYER_STANDING:
+    	case Constants.PLAYER_WALKING:
     	
 			doPlayerWalk();
 			
@@ -124,16 +103,16 @@ function Update () {
 			
     	break;
     	
-    	case PLAYER_JUMPING:
+    	case Constants.PLAYER_JUMPING:
     	
 			if (kickPressed)
 			{
-				playerState = PLAYER_FLYING_KICK;
+				playerState = Constants.PLAYER_FLYING_KICK;
 				anim.StopPlayback();
 				anim.Play("flying_kick");
 				AudioSource.PlayClipAtPoint(attackSound, this.transform.position);
 			}
-    	case PLAYER_FLYING_KICK:
+    	case Constants.PLAYER_FLYING_KICK:
     
 //			transform.position += transform.up * jumpSpeed * Time.deltaTime;
 			transform.position.x +=  horizontalJumpVelocity * Time.deltaTime;
@@ -142,13 +121,13 @@ function Update () {
 			
 			if (grounded)
 			{
-				playerState = PLAYER_STANDING;
+				playerState = Constants.PLAYER_STANDING;
 //				anim.SetBool("is jumping", false);
 			}
 		
 		break;
 		
-		case PLAYER_PUNCHING:
+		case Constants.PLAYER_PUNCHING:
 		
 //			Debug.Log("punchPressed = "+punchPressed);
 			if (punchPressed)
@@ -162,46 +141,46 @@ function Update () {
 				(attackMove == 2 && !anim.GetCurrentAnimatorStateInfo(0).IsName("player_cross")))
 //			if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !anim.IsInTransition(0))
 			{
-				playerState = PLAYER_STANDING;
+				playerState = Constants.PLAYER_STANDING;
 			}
 			
 		break;
 		
-		case PLAYER_KICKING:
+		case Constants.PLAYER_KICKING:
 		
 //			if (!anim.animation.IsPlaying("Player kick"))
 			if (!anim.GetCurrentAnimatorStateInfo(0).IsName("kick_1"))
 //			if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !anim.IsInTransition(0))
 			{
-				playerState = PLAYER_STANDING;
+				playerState = Constants.PLAYER_STANDING;
 			}
 			
 		break;
 		
-		case PLAYER_HIT:
+		case Constants.PLAYER_HIT:
 			
 			timeSinceLastHit = Time.time;
 			
 			if (Time.time - timer > 0.1)
 			{
-				playerState = PLAYER_STANDING;
+				playerState = Constants.PLAYER_STANDING;
 				anim.StopPlayback();
 			}
 			
 		break;	
 		
-		case PLAYER_FALLING:
+		case Constants.PLAYER_FALLING:
 		
 			if (this.transform.position.y <= 0.0 && this.rigidbody2D.velocity.y < 0.0f)
 			{
-				playerState = PLAYER_DOWN;
+				playerState = Constants.PLAYER_DOWN;
 				timer = Time.time;
 				anim.Play("Down");
 			}
 			
 		break;
 		
-		case PLAYER_DOWN:
+		case Constants.PLAYER_DOWN:
 		
 			if (Time.time - timer > 1.0)
 			{
@@ -211,7 +190,7 @@ function Update () {
 				}
 				else
 				{
-					playerState = PLAYER_STANDING;
+					playerState = Constants.PLAYER_STANDING;
 				}
 			}
 		
@@ -234,7 +213,7 @@ function doPlayerWalk()
 	
 //	if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Player punch") &&
 //		!anim.GetCurrentAnimatorStateInfo(0).IsName("Player kick") &&
-//		playerState != PLAYER_JUMPING)	
+//		playerState != Constants.PLAYER_JUMPING)	
 	{	
 		// Flip character movement
 		if (horizontalInput < 0)
@@ -244,7 +223,7 @@ function doPlayerWalk()
 	    	//transform.Translate(-Vector3.right * moveSpeed * Time.deltaTime);
 	    	transform.Translate(Vector3.right * moveH);
 //			anim.SetBool("walking", true);
-			playerState = PLAYER_WALKING;
+			playerState = Constants.PLAYER_WALKING;
 			anim.Play("player_walk");
 	    } 
 	    else if(horizontalInput > 0)
@@ -254,14 +233,14 @@ function doPlayerWalk()
 	    	//transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
 	    	transform.Translate(Vector3.right * moveH);
 //			anim.SetBool("walking", true);
-			playerState = PLAYER_WALKING;
+			playerState = Constants.PLAYER_WALKING;
 			anim.Play("player_walk");
 	    }    
 	    
 	    if (horizontalInput == 0)
 	    {
 	    	anim.StopPlayback();
-	    	playerState = PLAYER_STANDING;
+	    	playerState = Constants.PLAYER_STANDING;
 	    	anim.Play("player_idle");
 	    }
     }
@@ -271,7 +250,7 @@ function doPunch(move : int)
 {
 	anim.StopPlayback();	
 //	anim.SetTrigger(punchingHash);
-	playerState = PLAYER_PUNCHING;
+	playerState = Constants.PLAYER_PUNCHING;
 	AudioSource.PlayClipAtPoint(attackSound, this.transform.position);
 	
 	timer = Time.time;
@@ -297,7 +276,7 @@ function doKick()
 {
 	anim.StopPlayback();	
 //	anim.SetTrigger("kicking");
-	playerState = PLAYER_KICKING;
+	playerState = Constants.PLAYER_KICKING;
 	AudioSource.PlayClipAtPoint(attackSound, this.transform.position);
 
 //	if (anim.GetInteger("attack move").Equals(0))
@@ -317,7 +296,7 @@ function doJump()
 {
 	anim.StopPlayback();	
 //	jumpSpeed = jumpStrength;
-	playerState = PLAYER_JUMPING;
+	playerState = Constants.PLAYER_JUMPING;
 	horizontalJumpVelocity = horizontalInput * moveSpeed;
 	rigidbody2D.AddForce(new Vector2(0f, jumpStrength));
 	anim.Play("player_jump");
@@ -371,14 +350,14 @@ function Hit (damage : int) {
 	
 	if (health <= 0 || hitCount == hitsToFall) 
 	{
-//		playerState = PLAYER_FALLING;
+//		playerState = Constants.PLAYER_FALLING;
 //		anim.Play("Fall", 0);
 //		velocityY = 0.05;
 		knockDown(damage);
 	}
 	else
 	{
-		playerState = PLAYER_HIT;
+		playerState = Constants.PLAYER_HIT;
 		anim.Play("Hit", 0);
 		timer = Time.time;
 	}
@@ -388,7 +367,7 @@ function Hit (damage : int) {
 
 function knockDown (damage : int) {
 
-	playerState = PLAYER_FALLING;
+	playerState = Constants.PLAYER_FALLING;
 	anim.Play("Fall", 0);
 //	velocityY = 0.03;
 	AudioSource.PlayClipAtPoint(hitSound, this.transform.position);
@@ -421,10 +400,6 @@ function GetState()
 	return playerState;
 }
 
-function GetStateString()
-{
-	return stateStrings;
-}
 
 function SetPauseTime()
 {
