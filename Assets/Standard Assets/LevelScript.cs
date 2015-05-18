@@ -4,8 +4,6 @@ using System.Collections.Generic;
 
 public class LevelScript : MonoBehaviour {
 
-//	public NewObjectPoolScript poolScript;
-//	public SmoothFollow2 smoothFollowScript;
 	public GameObject boundary;
 	public Camera camera;
 	public GameObject rightStopTrigger;
@@ -16,8 +14,8 @@ public class LevelScript : MonoBehaviour {
 	private int gameState;
 	private int currentSection;
 	private float[] triggerXPositions = {6.4f, 12.42f, 
-	                                   13.0f, 20.0f, 
-		21.0f, 28.0f};
+	                                     13.0f, 20.0f, 
+										 21.0f, 28.0f};
 
 	private const int GAMESTATE_FIGHTING = 0;
 	private const int GAMESTATE_CLEARED_ENEMIES = 1;
@@ -30,30 +28,19 @@ public class LevelScript : MonoBehaviour {
 		Component comp = objectPool.GetComponent <NewObjectPoolScript>();
 
 		currentSection = 0;
+	}
 
-//		// Spawn Abobo
-//		GameObject obj = NewObjectPoolScript.current.GetPooledObject(0);
-//	
-//		if (obj == null)
-//		{
-//			return;
-//		}
-//		obj.transform.position = new Vector2 (5, 0);
-//		obj.SetActive (true);
-
-		// Spawn 6 Williamses
-//		for (int i = 0; i < 6; i++) 
-//		{
-//			obj = NewObjectPoolScript.current.GetPooledObject (1);
-//
-//			Debug.Log ("LevelScript: obj 1 = " + obj);
-//
-//			if (obj == null) {
-//					return;
-//			}
-//			obj.transform.position = new Vector2 (5*i, 0);
-//			obj.SetActive (true);
-//		}
+	void SpawnEnemy(int enemyType, int x)
+	{
+		GameObject obj = NewObjectPoolScript.current.GetPooledObject(enemyType);
+		
+		if (obj == null)
+		{
+			return;
+		}
+		obj.transform.position = new Vector2 (x, 0);
+		obj.SetActive (true);
+		obj.GetComponent("EnemyScript").SendMessage("Reset");
 	}
 
 	// Update is called once per frame
@@ -68,7 +55,7 @@ public class LevelScript : MonoBehaviour {
 		{
 		case GAMESTATE_CLEARED_ENEMIES:
 
-			if (player.position.x > leftStopTrigger.transform.position.x && currentSection < 1)
+			if (player.position.x > leftStopTrigger.transform.position.x && currentSection < triggerXPositions.Length/2-1)
 			{
 				ProgressToNextSection();
 				SetGameState(GAMESTATE_NEXT_SECTION);
@@ -92,7 +79,6 @@ public class LevelScript : MonoBehaviour {
 	public void ProgressToNextSection()
 	{
 		currentSection++;
-		Debug.Log ("currentSection = " + currentSection);
 
 		boundary.SetActive (false);
 

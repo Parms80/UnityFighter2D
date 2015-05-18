@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="32" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="leveltiles" tilewidth="32" tileheight="32">
+  <image source="leveltiles.png" width="256" height="256"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="100" height="32">
+  <data encoding="base64" compression="zlib">
+   eJzt1dsKgkAUhWGzrtKbjtAROkJ5Vb7/u7UHZmqQ2VkQaM7/wULYLS3Y2CQJAAAAAAAAAAAAAAAY2qAdzC7Spn8Enswu3PtRBD4vPkjonpBSmYXmfv9dp2vS5PV+jJRO0/OY9tG3MRZKp+l5LLsw/PNjp3TMfCyZSKaSmWRe0//lPLZ9uPPjonTMfClZSdaSjWSr9K81z/l27v6rBjZd587zTHKz19xeM2++lxwkR8lJcvb6/j13O68+I1f62ve6fllJ1/Vantj2AQD/4gG1zg4F
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 1">
+  <object x="4.79451" y="897.38" width="1274.89" height="30.4273"/>
+ </objectgroup>
+</map>

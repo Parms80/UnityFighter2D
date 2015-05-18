@@ -36,21 +36,3 @@ function countEnemies()
 	
 	return numEnemies;	
 }
-
-
-function spawnEnemies()
-{
-	switch (levelProgress)
-	{
-		case 1:
-			Instantiate(Resources.Load("Linda"), Vector3(11.0, 0.0, 0.0), Quaternion.identity);
-			Instantiate(Resources.Load("Abobo"), Vector3(13.5, 0.0, 3.7), Quaternion.identity);
-		break;
-		
-		case 2:
-			Instantiate(Resources.Load("AboboBoss"), Vector3(50.0, 0.0, 0.0), Quaternion.identity);
-			Instantiate(Resources.Load("Williams"), Vector3(45.0, 0.0, 3.0), Quaternion.identity);
-			Instantiate(Resources.Load("Roper"), Vector3(30.0, 0.0, 0.0), Quaternion.identity);
-		break;
-	}
-}

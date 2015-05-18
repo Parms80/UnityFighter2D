@@ -6,7 +6,6 @@ var attackSound : AudioClip;
 var jumpSound : AudioClip;
 var deadSound : AudioClip;
 var jumpStrength : float = 400.0;
-//var mass : float = 0.5;
 var hitsToFall : int = 3;
 
 private var anim : Animator;
@@ -19,7 +18,7 @@ private var jumpPressed : boolean;
 private var jumpSpeed : float;
 private var horizontalJumpVelocity : float;
 private var grounded : boolean;
-private var groundCheck : Transform;			// A position marking where to check if the player is grounded.
+private var groundCheck : Transform;
 private var timer : float;
 private var facingRight : boolean;
 private var health : int;
@@ -28,16 +27,13 @@ private var timeSinceLastHit : float;
 private var hitCount : int;
 private var freezeStartTime : int;
 private var frozen : boolean;
-
-//private var punchingHash = Animator.StringToHash("punching");
-	
 private var playerState : int;
 
 
 
 function Start () {
 	anim = GetComponent(Animator);
-	xScale = transform.localScale.x; // Get correct orientation for player
+	xScale = transform.localScale.x; 				// Get correct orientation for player
 	playerState = Constants.PLAYER_STANDING;
 	groundCheck = transform.Find("groundCheck");
 	health = 100;
@@ -45,7 +41,7 @@ function Start () {
 	frozen = false;
 }
 
-function Update () {
+function Update(){
 
 	punchPressed = Input.GetKeyDown(KeyCode.C);
 	kickPressed = Input.GetKeyDown(KeyCode.Z);
@@ -58,151 +54,129 @@ function Update () {
 	if (frozen)
 	{
 		var	freezeTime = Time.time - freezeStartTime;
-		Debug.Log("Freeze time = "+freezeTime);
-		if (freezeTime > 0.5)
+		
+		if (freezeTime > Constants.FREEZE_TIME)
 		{
 			frozen = false;
 //			Time.timeScale = 1;
-		
 //			rigidbody2D.isKinematic = true;
 			anim.speed = 1;
 		}
 	}
 	else
 	{
-    switch (playerState)
-    {
-    	case Constants.PLAYER_STANDING:
-    	case Constants.PLAYER_WALKING:
-    	
-			doPlayerWalk();
-			
-			if (punchPressed)
-			{
-				doPunch(attackMove);
-			}
-			else if (!punchPressed)
-			{
-//				anim.SetBool(punchingHash, false);
-			}
-
-			if (kickPressed)
-			{
-				doKick();
-			}
-			else if (!kickPressed)
-			{
-//				anim.SetBool("kicking", false);
-			}
-
-			if (jumpPressed && grounded)
-//			if (jumpPressed && transform.position.y == 0.0)
-			{
-				doJump();
-			}
-			
-    	break;
-    	
-    	case Constants.PLAYER_JUMPING:
-    	
-			if (kickPressed)
-			{
-				playerState = Constants.PLAYER_FLYING_KICK;
-				anim.StopPlayback();
-				anim.Play("flying_kick");
-				AudioSource.PlayClipAtPoint(attackSound, this.transform.position);
-			}
-    	case Constants.PLAYER_FLYING_KICK:
-    
-//			transform.position += transform.up * jumpSpeed * Time.deltaTime;
-			transform.position.x +=  horizontalJumpVelocity * Time.deltaTime;
-//			jumpSpeed -= mass;
-			
-			
-			if (grounded)
-			{
-				playerState = Constants.PLAYER_STANDING;
-//				anim.SetBool("is jumping", false);
-			}
-		
-		break;
-		
-		case Constants.PLAYER_PUNCHING:
-		
-//			Debug.Log("punchPressed = "+punchPressed);
-			if (punchPressed)
-			{
-				doPunch(1);
-			}
-			else
-//			anim.SetBool(punchingHash, false);
-//			if (!anim.animation.IsPlaying("Player punch"))
-			if ((attackMove == 1 && !anim.GetCurrentAnimatorStateInfo(0).IsName("player_jab_1")) ||
-				(attackMove == 2 && !anim.GetCurrentAnimatorStateInfo(0).IsName("player_cross")))
-//			if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !anim.IsInTransition(0))
-			{
-				playerState = Constants.PLAYER_STANDING;
-			}
-			
-		break;
-		
-		case Constants.PLAYER_KICKING:
-		
-//			if (!anim.animation.IsPlaying("Player kick"))
-			if (!anim.GetCurrentAnimatorStateInfo(0).IsName("kick_1"))
-//			if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !anim.IsInTransition(0))
-			{
-				playerState = Constants.PLAYER_STANDING;
-			}
-			
-		break;
-		
-		case Constants.PLAYER_HIT:
-			
-			timeSinceLastHit = Time.time;
-			
-			if (Time.time - timer > 0.1)
-			{
-				playerState = Constants.PLAYER_STANDING;
-				anim.StopPlayback();
-			}
-			
-		break;	
-		
-		case Constants.PLAYER_FALLING:
-		
-			if (this.transform.position.y <= 0.0 && this.rigidbody2D.velocity.y < 0.0f)
-			{
-				playerState = Constants.PLAYER_DOWN;
-				timer = Time.time;
-				anim.Play("Down");
-			}
-			
-		break;
-		
-		case Constants.PLAYER_DOWN:
-		
-			if (Time.time - timer > 1.0)
-			{
-				if (health <= 0)		// If dead
+	    switch (playerState)
+	    {
+	    	case Constants.PLAYER_STANDING:
+	    	case Constants.PLAYER_WALKING:
+	    	
+				doPlayerWalk();
+				
+				if (punchPressed)
 				{
-					gameObject.SetActive(false);
+					doPunch(attackMove);
 				}
-				else
+
+				if (kickPressed)
+				{
+					doKick();
+				}
+
+				if (jumpPressed && grounded)
+				{
+					doJump();
+				}
+				
+	    	break;
+	    	
+	    	case Constants.PLAYER_JUMPING:
+	    	
+				if (kickPressed)
+				{
+					playerState = Constants.PLAYER_FLYING_KICK;
+					anim.StopPlayback();
+					anim.Play("flying_kick");
+					AudioSource.PlayClipAtPoint(attackSound, this.transform.position);
+				}
+	    	case Constants.PLAYER_FLYING_KICK:
+	    
+				transform.position.x +=  horizontalJumpVelocity * Time.deltaTime;
+				
+				if (grounded)
 				{
 					playerState = Constants.PLAYER_STANDING;
 				}
-			}
+			
+			break;
+			
+			case Constants.PLAYER_PUNCHING:
+			
+				if (punchPressed)
+				{
+					doPunch(Constants.ATTACK_JAB);
+				}
+				else if ((attackMove == Constants.ATTACK_JAB && !anim.GetCurrentAnimatorStateInfo(0).IsName("player_jab_1")) ||
+						 (attackMove == Constants.ATTACK_CROSS && !anim.GetCurrentAnimatorStateInfo(0).IsName("player_cross")))
+				{
+					playerState = Constants.PLAYER_STANDING;
+				}
+				
+			break;
+			
+			case Constants.PLAYER_KICKING:
+			
+				if (!anim.GetCurrentAnimatorStateInfo(0).IsName("kick_1"))
+				{
+					playerState = Constants.PLAYER_STANDING;
+				}
+				
+			break;
+			
+			case Constants.PLAYER_HIT:
+				
+				timeSinceLastHit = Time.time;
+				
+				if (Time.time - timer > Constants.PLAYER_STUN_TIME)
+				{
+					playerState = Constants.PLAYER_STANDING;
+					anim.StopPlayback();
+				}
+				
+			break;	
+			
+			case Constants.PLAYER_FALLING:
+			
+				if (this.transform.position.y <= 0.0 && this.rigidbody2D.velocity.y < 0.0f)
+				{
+					playerState = Constants.PLAYER_DOWN;
+					timer = Time.time;
+					anim.Play("Down");
+				}
+				
+			break;
+			
+			case Constants.PLAYER_DOWN:
+			
+				if (Time.time - timer > Constants.PLAYER_DOWN_TIME)
+				{
+					if (health <= 0)		
+					{
+						gameObject.SetActive(false);
+					}
+					else
+					{
+						playerState = Constants.PLAYER_STANDING;
+					}
+				}
+			
+			break;
+		}
 		
-		break;
-	}
-	
-	// Reset combo after certain time
-	if (Time.time - timer > 0.5)
-	{
-//		anim.SetInteger("attack move", 0);
-		attackMove = 0;
-	}
+		// Reset combo after certain time
+		if (Time.time - timer > Constants.COMBO_RESET_TIME)
+		{
+			attackMove = Constants.ATTACK_NONE;
+		}
 	}
 }
 
@@ -210,92 +184,64 @@ function doPlayerWalk()
 {
 	var moveH : float = horizontalInput * moveSpeed * Time.deltaTime;	// Smooth horizontal movement
 	
-	
-//	if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Player punch") &&
-//		!anim.GetCurrentAnimatorStateInfo(0).IsName("Player kick") &&
-//		playerState != Constants.PLAYER_JUMPING)	
-	{	
-		// Flip character movement
-		if (horizontalInput < 0)
-		{
-	    	transform.localScale.x = xScale;
-	    	facingRight = false;
-	    	//transform.Translate(-Vector3.right * moveSpeed * Time.deltaTime);
-	    	transform.Translate(Vector3.right * moveH);
-//			anim.SetBool("walking", true);
-			playerState = Constants.PLAYER_WALKING;
-			anim.Play("player_walk");
-	    } 
-	    else if(horizontalInput > 0)
-	    {
-	    	transform.localScale.x = -xScale;
-	    	facingRight = true;
-	    	//transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
-	    	transform.Translate(Vector3.right * moveH);
-//			anim.SetBool("walking", true);
-			playerState = Constants.PLAYER_WALKING;
-			anim.Play("player_walk");
-	    }    
-	    
-	    if (horizontalInput == 0)
-	    {
-	    	anim.StopPlayback();
-	    	playerState = Constants.PLAYER_STANDING;
-	    	anim.Play("player_idle");
-	    }
+	// Flip character movement
+	if (horizontalInput < 0)
+	{
+    	transform.localScale.x = xScale;
+    	facingRight = false;
+    	transform.Translate(Vector3.right * moveH);
+		playerState = Constants.PLAYER_WALKING;
+		anim.Play("player_walk");
+    } 
+    else if(horizontalInput > 0)
+    {
+    	transform.localScale.x = -xScale;
+    	facingRight = true;
+    	transform.Translate(Vector3.right * moveH);
+		playerState = Constants.PLAYER_WALKING;
+		anim.Play("player_walk");
+    }    
+    
+    if (horizontalInput == 0)
+    {
+    	anim.StopPlayback();
+    	playerState = Constants.PLAYER_STANDING;
+    	anim.Play("player_idle");
     }
 }
 
 function doPunch(move : int)
 {
 	anim.StopPlayback();	
-//	anim.SetTrigger(punchingHash);
 	playerState = Constants.PLAYER_PUNCHING;
 	AudioSource.PlayClipAtPoint(attackSound, this.transform.position);
-	
 	timer = Time.time;
 	
-//	if (anim.GetInteger("attack move").Equals(0) || anim.GetInteger("attack move").Equals(2))
-	if (move == 0 || move == 2)
+	if (move == Constants.ATTACK_NONE || move == Constants.ATTACK_CROSS)
 	{
-//		anim.SetInteger("attack move", 1);
-		attackMove = 1;
+		attackMove = Constants.ATTACK_JAB;
 		anim.Play("player_jab_1", 0);
 	}
 	else
 	{
-//		anim.SetInteger("attack move", 2);
-		attackMove = 2;
+		attackMove = Constants.ATTACK_CROSS;
 		anim.Play("player_cross", 0);
 	}
-	
-//	checkHitEnemy();
 }
 
 function doKick()
 {
 	anim.StopPlayback();	
-//	anim.SetTrigger("kicking");
 	playerState = Constants.PLAYER_KICKING;
 	AudioSource.PlayClipAtPoint(attackSound, this.transform.position);
 
-//	if (anim.GetInteger("attack move").Equals(0))
-//	{
-//		anim.SetInteger("attack move", 3);
-//	}
-//	if (attackMove == 0)
-	{
-		attackMove = 3;
-		anim.Play("kick_1");
-	}
-	
-//	checkHitEnemy();
+	attackMove = Constants.ATTACK_KICK;
+	anim.Play("kick_1");
 }
 
 function doJump()
 {
 	anim.StopPlayback();	
-//	jumpSpeed = jumpStrength;
 	playerState = Constants.PLAYER_JUMPING;
 	horizontalJumpVelocity = horizontalInput * moveSpeed;
 	rigidbody2D.AddForce(new Vector2(0f, jumpStrength));
@@ -303,38 +249,6 @@ function doJump()
 	AudioSource.PlayClipAtPoint(jumpSound, this.transform.position);
 }
 
-/*
-function checkHitEnemy()
-{
-	for (var enemy : GameObject in GameObject.FindGameObjectsWithTag("Enemy"))
-	{
-		if (enemy != null)
-		{
-			if (enemy.GetComponent(EnemyScript).isEnemyWalking())
-			{	
-				var xDistance = (enemy.transform.position.x - this.transform.position.x);
-				var yDistance = Mathf.Abs(this.transform.position.y - enemy.transform.position.y);
-				
-				if (yDistance < 1.0)
-				{
-//					switch (attackMove)
-//					{
-//						case ATTACKMOVE_PUNCH_2:
-//						
-//							if ((facingRight && xDistance > 0.0 && xDistance < 2.6) ||
-//								(!facingRight && xDistance < 0.0 && xDistance > -2.6))
-//							{
-//								enemy.SendMessage("Hit", 10);
-//							}
-//							
-//						break;
-//					}
-				}
-			}
-		}
-	}
-}
-*/
 
 function Hit (damage : int) {
 	health -= damage;
@@ -350,9 +264,6 @@ function Hit (damage : int) {
 	
 	if (health <= 0 || hitCount == hitsToFall) 
 	{
-//		playerState = Constants.PLAYER_FALLING;
-//		anim.Play("Fall", 0);
-//		velocityY = 0.05;
 		knockDown(damage);
 	}
 	else
@@ -369,20 +280,15 @@ function knockDown (damage : int) {
 
 	playerState = Constants.PLAYER_FALLING;
 	anim.Play("Fall", 0);
-//	velocityY = 0.03;
+	
 	AudioSource.PlayClipAtPoint(hitSound, this.transform.position);
-	var knockBackForce = 1000f;
+	var knockBackForce = Constants.KNOCK_BACK_FORCE;
 	
 	if (health <= 0)
 	{
 		AudioSource.PlayClipAtPoint(deadSound, this.transform.position);
-		knockBackForce = 1500f;
+		knockBackForce = Constants.KNOCK_BACK_FORCE_DEAD;
 	}
-	
-	// Check which side of player enemy is on
-//	var player = GameObject.Find("Player");
-//	var playerPosition = player.transform.position;
-//	var directionToCharacter = playerPosition - this.transform.position;
 	
 	// Knock back
 	if (facingRight)

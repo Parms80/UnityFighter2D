@@ -11,11 +11,11 @@
 		
 		if (enemyState == Constants.ENEMY_FLYING_KICK)
 		{
-			this.SendMessage("knockDown", 10);
+			this.SendMessage("knockDown", Constants.ENEMY_FLY_KICK_DAMAGE);
 		}
 		else if (playerState != Constants.PLAYER_FALLING && playerState != Constants.PLAYER_DOWN)
 		{
-			this.SendMessage("Hit", 10);
+			this.SendMessage("Hit", Constants.ENEMY_ATTACK_DAMAGE);
 		}
 	}
 }

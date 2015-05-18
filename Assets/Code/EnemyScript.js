@@ -13,9 +13,7 @@ var flyKickEnabled : boolean;
 
 
 private var player : GameObject;
-
 private var levelScript : LevelScript;
-
 private var anim : Animator;
 private var enemyState : int;
 private var enemyHealth : int;
@@ -70,7 +68,8 @@ function Update () {
 				var playerState : int = player.GetComponent(PlayerScript).GetState();
 				
 				// Check if player is close and walking towards them
-				if (Mathf.Abs(distanceTmp.x) < 4.0f && playerState == 1 && 
+				if (Mathf.Abs(distanceTmp.x) < Constants.WALK_BACK_DISTANCE && 
+					playerState == Constants.PLAYER_WALKING && 
 					Time.time - stateSwitchTimer > nextStateTime)
 				{
 					// Walk backwards
@@ -150,7 +149,7 @@ function Update () {
 			
 			timeSinceLastHit = Time.time;
 			
-			if (Time.time - timer > 0.1)
+			if (Time.time - timer > Constants.ENEMY_STUN_TIME)
 			{
 				enemyState = Constants.ENEMY_IDLE;
 				anim.StopPlayback();
@@ -158,21 +157,6 @@ function Update () {
 		break;	
 		
 		case Constants.ENEMY_FALLING:
-//			player = GameObject.Find("Player");
-//			playerPosition = player.transform.position;
-//			directionToCharacter = playerPosition - this.transform.position;
-//			
-//			if (directionToCharacter.x < 0)
-//			{
-//				this.transform.position.x += 0.02;
-//			}
-//			else
-//			{
-//				this.transform.position.x -= 0.02;
-//			}
-//			this.transform.position.y += velocityY;
-//			velocityY -= 0.005;
-//			
 			
 			if (this.transform.position.y <= 0.0)
 			{
@@ -183,34 +167,15 @@ function Update () {
 		
 		case Constants.ENEMY_DOWN:
 		
-			if (Time.time - timer > 1.0)
+			if (Time.time - timer > Constants.ENEMY_DOWN_TIME)
 			{
-				if (enemyHealth <= 0)		// If dead
+				if (enemyHealth <= 0)	
 				{
-//					this.active = false;
 					gameObject.SetActive(false);
 					
 					if (levelScript.CountEnemies() == 0)
 					{
-//						levelScript.ProgressToNextSection();
 						levelScript.SetGameState(1);
-					}
-					
-//					Debug.Log("num enemies = "+level.GetComponent(Level).countEnemies());
-					// If defeated all enemies, progress level and spawn new enemies
-//					if (level.GetComponent(Level).countEnemies() == 1 && level.GetComponent(Level).levelProgress < 2)
-					{
-//						level.GetComponent(Level).levelProgress++;
-//						level.GetComponent(Level).spawnEnemies();
-						
-//						var hand = GameObject.Find("Hand");
-//						hand.GetComponent(HandScript).showHand();
-						
-//						if (level.GetComponent(Level).levelProgress == 2)
-//						{
-//							var camera = GameObject.Find("Main Camera");
-//							camera.GetComponent(MusicPlayer).loadNextTrack();
-//						}
 					}
 				}
 				else
@@ -222,22 +187,18 @@ function Update () {
 		
 		case Constants.ENEMY_PUNCHING:
 		
-//			if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Punch"))
 			if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !anim.IsInTransition(0))
 			{
 				enemyState = Constants.ENEMY_IDLE;
-//				anim.StopPlayback();
 			}
 			
 		break;
 		
 		case Constants.ENEMY_FLYING_KICK:
-		
 			
 			if (grounded)
 			{
 				enemyState = Constants.ENEMY_IDLE;
-//				anim.SetBool("is jumping", false);
 			}
 		break;
 			
@@ -250,7 +211,7 @@ function Hit (args : int[]) {
 	
 	enemyHealth -= damage;
 
-	if (Time.time - timeSinceLastHit < 0.5)
+	if (Time.time - timeSinceLastHit < Constants.LAST_HIT_TIME)
 	{
 		hitCount++;
 	}
@@ -261,9 +222,6 @@ function Hit (args : int[]) {
 	
 	if (enemyHealth <= 0 || hitCount == hitsToFall) 
 	{
-//		enemyState = Constants.ENEMY_FALLING;
-//		anim.Play("Fall", 0);
-//		velocityY = 0.03;
 		knockDown(damage);
 	}
 	else
@@ -273,7 +231,7 @@ function Hit (args : int[]) {
 		timer = Time.time;
 	}
 	
-	if (playerState == 2 || playerState == 3)
+	if (playerState == Constants.PLAYER_PUNCHING || playerState == Constants.PLAYER_PUNCHING_2)
 	{
 		AudioSource.PlayClipAtPoint(hitSound, this.transform.position);
 	}
@@ -287,14 +245,14 @@ function knockDown (damage : int) {
 
 	enemyState = Constants.ENEMY_FALLING;
 	anim.Play("Fall", 0);
-	velocityY = 0.03;
+	velocityY = Constants.KNOCK_BACK_FORCE_Y;
 	AudioSource.PlayClipAtPoint(hitSound, this.transform.position);
-	var knockBackForce = 1000f;
+	var knockBackForce = Constants.KNOCK_BACK_FORCE;
 	
 	if (enemyHealth <= 0)
 	{
 		AudioSource.PlayClipAtPoint(deadSound, this.transform.position);
-		knockBackForce = 1500f;
+		knockBackForce = Constants.KNOCK_BACK_FORCE_DEAD;
 	}
 	
 	// Check which side of player enemy is on
@@ -331,19 +289,16 @@ function checkPunch()
 	// Find player position
 	var player = GameObject.Find("Player");
 	var xDistance = (player.transform.position.x - this.transform.position.x);
-	
 	var yDistance = Mathf.Abs(this.transform.position.y - player.transform.position.y);
 	
 	if (yDistance < 1.0)
 	{
-		if ((facingRight && xDistance > 0.0 && xDistance < 1.5) ||
-			(!facingRight && xDistance < 0.0 && xDistance > -1.5))
+		if ((facingRight && xDistance > 0.0 && xDistance < Constants.PUNCH_DISTANCE) ||
+			(!facingRight && xDistance < 0.0 && xDistance > -Constants.PUNCH_DISTANCE))
 		{
 			anim.StopPlayback();
-//			player.SendMessage("Hit", 10);
 			anim.Play("Punch");
 			enemyState = Constants.ENEMY_PUNCHING;
-//			timer = Time.time;
 		}
 	}
 }
@@ -355,11 +310,11 @@ function doFlyingKick()
 	
 	if (facingRight)
 	{	
-		rigidbody2D.AddForce(new Vector2(1000f, jumpStrength));
+		rigidbody2D.AddForce(new Vector2(Constants.FLY_KICK_VELOCITY_X, jumpStrength));
 	}
 	else
 	{
-		rigidbody2D.AddForce(new Vector2(-1000f, jumpStrength));
+		rigidbody2D.AddForce(new Vector2(-Constants.FLY_KICK_VELOCITY_X, jumpStrength));
 	}
 	
 	anim.Play("Flying kick");

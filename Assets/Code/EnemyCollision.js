@@ -20,19 +20,15 @@ function OnTriggerEnter2D(coll: Collider2D) {
 			playerState == Constants.PLAYER_PUNCHING_2 || 
 			playerState == Constants.PLAYER_KICKING)
 		{
-//			Debug.Log("Enemy Hit");
-			
-//			var enemy = GameObject.FindGameObjectWithTag("Enemy");	
-//			enemy.SendMessage("Hit", 10);
 			var args = new int[2];
-			args[0] = 10;
+			args[0] = Constants.PLAYER_ATTACK_DAMAGE;
 			args[1] = playerState;
 			this.SendMessage("Hit", args);
 //			playerScript.SetPauseTime();
 		}
 		else if (playerState == Constants.PLAYER_FLYING_KICK)
 		{
-			this.SendMessage("knockDown", 10);
+			this.SendMessage("knockDown", Constants.PLAYER_FLY_KICK_DAMAGE);
 			
 			playerScript.SetPauseTime();
 		}
