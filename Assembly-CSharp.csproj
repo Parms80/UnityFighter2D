@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AddEnemy.cs" />
      <Compile Include="Assets\Code\BackgroundParallax.cs" />
      <Compile Include="Assets\Code\BoundaryScript.cs" />
      <Compile Include="Assets\Code\EnemyAI.cs" />

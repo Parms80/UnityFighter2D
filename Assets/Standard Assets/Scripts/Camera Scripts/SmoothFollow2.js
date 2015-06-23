@@ -6,6 +6,7 @@ var smoothRotation = true;
 var rotationDamping = 10.0;
 var lockRotation : boolean;
 var follow : boolean;
+var lockHeight : boolean;
 
 function Start()
 {
@@ -23,6 +24,11 @@ function Update () {
 	}
 	
 	transform.position = Vector3.Lerp (transform.position, wantedPosition, Time.deltaTime * damping);
+	
+	if (lockHeight)
+	{
+		transform.position.y = height;
+	}
 
 	if (smoothRotation) {
 		var wantedRotation = Quaternion.LookRotation(target.position - transform.position, target.up);

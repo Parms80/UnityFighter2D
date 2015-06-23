@@ -14,8 +14,12 @@ public class LevelScript : MonoBehaviour {
 	private int gameState;
 	private int currentSection;
 	private float[] triggerXPositions = {6.4f, 12.42f, 
-	                                     13.0f, 20.0f, 
-										 21.0f, 28.0f};
+	                                     13.0f, 60.0f, 
+										 21.0f, 28.0f,
+										 29.0f, 34.0f,
+										 35.0f, 50.0f,
+										 51.0f, 60.0f,
+										 64.0f, 74.0f};
 
 	private const int GAMESTATE_FIGHTING = 0;
 	private const int GAMESTATE_CLEARED_ENEMIES = 1;

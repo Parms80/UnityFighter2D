@@ -1,10 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Code/PlayerScript.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Standard Assets/Scripts/Camera Scripts/SmoothFollow2.js">
     <Files>
-      <File FileName="Assets/Code/PlayerScript.js" Line="291" Column="51" />
-      <File FileName="Assets/Code/Constants.js" Line="45" Column="38" />
-      <File FileName="Assets/Code/EnemyScript.js" Line="319" Column="2" />
+      <File FileName="Assets/Standard Assets/LevelScript.cs" Line="17" Column="47" />
+      <File FileName="Assets/Code/PlayerScript.js" Line="1" Column="1" />
+      <File FileName="Assets/Code/Constants.js" Line="1" Column="1" />
+      <File FileName="Assets/Code/EnemyScript.js" Line="1" Column="1" />
+      <File FileName="Assets/Standard Assets/Scripts/Camera Scripts/SmoothFollow2.js" Line="25" Column="99" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,8 +18,15 @@
             <Node name="Standard Assets" expanded="True" />
           </Node>
           <Node name="Assembly-UnityScript" expanded="True">
-            <Node name="Code" expanded="True">
-              <Node name="PlayerScript.js" selected="True" />
+            <Node name="Code" expanded="True" />
+          </Node>
+          <Node name="Assembly-UnityScript-firstpass" expanded="True">
+            <Node name="Standard Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Camera Scripts" expanded="True">
+                  <Node name="SmoothFollow2.js" selected="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>
