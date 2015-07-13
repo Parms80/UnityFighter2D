@@ -171,6 +171,8 @@ function Update () {
 			{
 				if (enemyHealth <= 0)	
 				{
+					anim.Play("Walk");		// Resets the collision box to walk height for next time
+					
 					gameObject.SetActive(false);
 					
 					if (levelScript.CountEnemies() == 0)

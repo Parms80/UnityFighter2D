@@ -13,7 +13,7 @@ public class LevelScript : MonoBehaviour {
 
 	private int gameState;
 	private int currentSection;
-	private float[] triggerXPositions = {6.4f, 12.42f, 
+	private float[] triggerXPositions = {6.4f, 27.42f, 
 	                                     13.0f, 60.0f, 
 										 21.0f, 28.0f,
 										 29.0f, 34.0f,
@@ -30,6 +30,13 @@ public class LevelScript : MonoBehaviour {
 
 		GameObject objectPool = GameObject.Find ("Object Pooler");
 		Component comp = objectPool.GetComponent <NewObjectPoolScript>();
+
+		Vector3 pos = leftStopTrigger.transform.position;
+		pos.x = triggerXPositions[0];
+		leftStopTrigger.transform.position = pos;
+
+		pos.x = triggerXPositions[1];
+		rightStopTrigger.transform.position = pos;
 
 		currentSection = 0;
 	}
